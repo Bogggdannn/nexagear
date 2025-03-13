@@ -1,0 +1,33 @@
+@import "~/src/scss/variables.scss";
+.head {
+    &-parent {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    &-content {
+        max-width: 686px;
+        width: 100%;
+        background-color: red;
+    }
+
+    &-slider {
+        max-width: 686px;
+        width: 100%;
+        background-color: blue;
+    }
+
+    &-actions {
+        display: flex;
+    }
+
+    &-title {
+        font-family: var(--second-family);
+        font-weight: 500;
+        font-size: 78px;
+        line-height: 110%;
+        letter-spacing: -0.02em;
+        color: $white;
+    }
+}
