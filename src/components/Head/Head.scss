@@ -1,4 +1,5 @@
 @import "~/src/scss/variables.scss";
+
 .head {
     &-parent {
         display: flex;
@@ -9,17 +10,26 @@
     &-content {
         max-width: 686px;
         width: 100%;
-        background-color: red;
+        
+    }
+
+    &-text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        color: $grey-2;
+        margin-top: 24px;
+        margin-bottom: 48px;
     }
 
     &-slider {
         max-width: 686px;
         width: 100%;
-        background-color: blue;
     }
 
     &-actions {
         display: flex;
+        gap: 45px;
     }
 
     &-title {

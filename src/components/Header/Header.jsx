@@ -1,6 +1,7 @@
 import './Header.scss';
 import { NavLink } from "react-router"
-
+import { slide as Menu } from 'react-burger-menu'
+import { useState } from 'react';
 
 function Header() {
     let links = [
@@ -26,12 +27,10 @@ function Header() {
         }
     ]
 
-    function showSettings (event) {
-        event.preventDefault();
-      }
+    let [menu, setMenu] = useState(false)
     return (
         <header className='container header'>
-            <img src="/icons/logo.svg" alt="логотип" className='logo'/>
+            <img src="/icons/logo.svg" alt="логотип" className='logo' />
             <ul className='nav-links'>
                 {links.map(item => {
                     return (
@@ -39,10 +38,25 @@ function Header() {
                     )
                 })}
             </ul>
+            <Menu isOpen={menu} right onStateChange={(state) => setMenu(state.isOpen)}>
+                {links.map((item, index) => {
+                    return (
+                        <NavLink key={index} to={item.url} className="menu-item" onClick={() => setMenu(false)}>{item.name}</NavLink>
+                    )
+                })}
+            </Menu>
+
             <div className='header-icons'>
-                <img src="/icons/searchButton.svg" alt="поиск"/>
+                <img src="/icons/searchButton.svg" alt="поиск" />
                 <img src="/icons/cartButton.svg" alt="корзина" />
-                <a onClick={event=>showSettings(event)} className="menu-item--small"></a>
+
+                <a onClick={() => setMenu(!menu)} className="menu-item--small">
+                    <button className={`hamburger hamburger--collapse ${menu?"is-active":''}`} type="button" >
+                        <span className="hamburger-box">
+                            <span className="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </a>
             </div>
         </header>
     )

@@ -3,6 +3,8 @@
 @import "variables.scss";
 @import "node_modules/normalize-scss/sass/_normalize.scss";
 @include normalize();
+@import "node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+
 
 :root {
     --font-family: "Inter", sans-serif;
@@ -28,4 +30,8 @@ a{
   text-decoration: none;
   color: inherit;
 
+}
+
+h1{
+  margin: 0;
 }

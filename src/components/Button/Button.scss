@@ -1,0 +1,125 @@
+@import "~/src/scss/variables.scss";
+
+.button{
+    cursor:pointer;
+    outline: none;
+    border: none;
+    &-primary {
+        button{
+            background-color: $red;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 150%;
+            color: $white;
+            width: 155px;
+            height: 56px;
+            
+        }
+        padding: 6px 8px;
+    }
+
+    &-secondary button{
+        border: 1px solid $grey;
+        width: 176px;
+        height: 56px;
+        background-color: $black;
+        color: $white;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        color: $white;
+    }
+
+    &-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    &-span-one, &-span-two, &-span-three,&-span-four{
+        background-color: $white;
+        width: 1px;
+        height: 1px;
+        position: absolute;
+    }
+
+    &-span-one{
+        &::after{
+            position :absolute;
+            content: "";
+            width: 1px;
+            height: 13px;
+            background-color: $white;
+        }
+        &::before{
+            position :absolute;
+            content: "";
+            width: 32px;
+            height: 1px;
+            background-color: $white;
+        }
+        top: 0;
+        left: 0;
+    }
+
+    &-span-two{
+        &::after{
+            position :absolute;
+            content: "";
+            width: 1px;
+            height: 13px;
+            background-color: $white;
+        }
+        &::before{
+            position :absolute;
+            content: "";
+            width: 32px;
+            height: 1px;
+            background-color: $white;
+        }
+        top: 0;
+        right: 0;
+        transform: scale(-1, 1);
+    }
+
+    &-span-three{
+        &::after{
+            position :absolute;
+            content: "";
+            width: 1px;
+            height: 13px;
+            background-color: $white;
+        }
+        &::before{
+            position :absolute;
+            content: "";
+            width: 32px;
+            height: 1px;
+            background-color: $white;
+        }
+        bottom: 0;
+        left: 0;
+        transform: scale(1, -1);
+    }
+
+    &-span-four{
+        &::after{
+            position :absolute;
+            content: "";
+            width: 1px;
+            height: 13px;
+            background-color: $white;
+        }
+        &::before{
+            position :absolute;
+            content: "";
+            width: 32px;
+            height: 1px;
+            background-color: $white;
+        }
+        bottom: 0;
+        right: 0;
+        transform: scale(-1, -1);
+    }
+}
