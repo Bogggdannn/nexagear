@@ -2,10 +2,81 @@
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 
-.head-slider{
-    .slide{
+.head-slider {
+    .slide {
         width: 488px;
         height: 389px;
-        background-color: $white;
-    }    
+    }
+
+    .slide-head-img {
+        width: 480px;
+        height: 280px;
+        object-fit: cover;
+    }
+
+    .slider {
+        margin-left: 66px;
+        margin-top: 54px;
+        max-width: 486px;
+    }
+
+    .slide-content {
+        display: flex;
+        margin-top: 14px;
+
+        .slider-get-now {
+            width: 92px;
+            height: 92px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('~/public/icons/getNow.svg');
+            text-align: center;
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 110%;
+            letter-spacing: -0.02em;
+            text-align: center;
+            color: $white;
+            margin-left:  27px;
+            }
+
+        .slider-price {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 110%;
+            letter-spacing: -0.02em;
+            color: $white;
+            margin-bottom: 10px;
+        }
+
+        .slider-text-content {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 110%;
+            letter-spacing: -0.02em;
+            text-align: center;
+            color: $grey-2;
+        }
+
+        .slider-information {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 27px;
+        }
+    }
+    .slick-dots{
+        button{
+            width: 16px;
+            height: 10px;
+            background-image: url("~/public/icons/defaultDots.svg");
+            &:before{
+                content: none;
+            }
+        }
+    }
 }
