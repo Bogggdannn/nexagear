@@ -1,0 +1,21 @@
+@import "~/src/scss/variables.scss";
+
+.powering{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1149px;
+    width: 100%;
+    margin: 0 auto;
+    &-socials{
+        max-width: 469px;
+        width: 100%;
+        background-color: red;
+    }
+
+    &-content{
+        max-width: 606px;
+        width: 100%;
+        background-color: green;
+    }
+}

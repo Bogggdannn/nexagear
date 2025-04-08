@@ -3,6 +3,7 @@ import Slider from "react-slick";
 
 export function SliderDefault() {
     const settings = {
+        arrows: false,
         dots: true,
         infinite: true,
         speed: 500,
@@ -15,17 +16,32 @@ export function SliderDefault() {
             <Slider className="slider"{...settings}>
                 <div className="slide">
                     <img src="/images/mouse.jpg" alt="" className="slide-head-img" />
+                    <div className="slide-discount">
+                        <div className="slide-procent">25%</div>
+                        <div className="slide-discount-text">Discount</div>
+                    </div>
                     <div className="slide-content">
-                        <div className="slider-get-now">Get<br/> Now</div>
-                        <div className="slider-information">               
+                        <div className="slider-get-now">Get<br /> Now</div>
+                        <div className="slider-information">
                             <p className="slider-price">$89,00</p>
                             <p className="slider-text-content">GForce Gen 3 Consoles</p></div>
                     </div>
                 </div>
                 <div className="slide">
-                    <h3>1</h3>
+                    <img src="/images/mouse.jpg" alt="" className="slide-head-img" />
+                    <div className="slide-discount">
+                        <div className="slide-procent">25%</div>
+                        <div className="slide-discount-text">Discount</div>
+                    </div>
+                    <div className="slide-content">
+                        <div className="slider-get-now">Get<br /> Now</div>
+                        <div className="slider-information">
+                            <p className="slider-price">$89,00</p>
+                            <p className="slider-text-content">GForce Gen 3 Consoles</p></div>
+                    </div>
                 </div>
             </Slider>
         </div>
+        
     )
 }

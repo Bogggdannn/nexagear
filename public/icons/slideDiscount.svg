@@ -1,0 +1,15 @@
+<svg width="116" height="117" viewBox="0 0 116 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject x="-14" y="-13.8245" width="144" height="144">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(7px);clip-path:url(#bgblur_0_0_783_clip_path);height:100%;width:100%"></div>
+  </foreignObject>
+  <circle data-figma-bg-blur-radius="14" cx="58" cy="58.1755" r="58" fill="url(#paint0_linear_0_783)" fill-opacity="0.5" />
+  <defs>
+    <clipPath id="bgblur_0_0_783_clip_path" transform="translate(14 13.8245)">
+      <circle cx="58" cy="58.1755" r="58" />
+    </clipPath>
+    <linearGradient id="paint0_linear_0_783" x1="16.7308" y1="8.54092" x2="120.462" y2="180.868" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B0B0B" />
+      <stop offset="1" stop-color="#717171" />
+    </linearGradient>
+  </defs>
+</svg>

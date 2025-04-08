@@ -21,6 +21,8 @@ export function Head() {
                     <SliderDefault/>
                 </div>
             </div>
+            <img src="icons/headScroll.svg" alt="scroll" className="head-scroll"/>
         </section>
+        
     )
 }
