@@ -1,21 +1,95 @@
 @import "~/src/scss/variables.scss";
 
-.powering{
+.powering {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     max-width: 1149px;
     width: 100%;
-    margin: 0 auto;
-    &-socials{
+    margin: 0 auto 113px ;
+    
+    &-socials {
         max-width: 469px;
         width: 100%;
-        background-color: red;
+
+        .socials-img {
+            width: 469px;
+            height: 674px;
+            margin-bottom: 34px;
+        }
+
+        .socials-icons {
+            margin-right: 30px;
+
+        }
     }
 
-    &-content{
+    &-content {
         max-width: 606px;
         width: 100%;
-        background-color: green;
+
+        &-title {
+            font-family: var(--second-family);
+            font-weight: 500;
+            font-size: 66px;
+            line-height: 110%;
+            letter-spacing: -0.02em;
+            color: $white;
+            margin-bottom: 24px;
+        }
+
+        &-paragraph {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            color: $grey-2;
+            max-width: 532px;
+            width: 100%;
+            margin-bottom: 34px;
+        }
+
+        &-line {
+            display: block;
+            height: 1px;
+            border: 0;
+            border-top: 1px solid $grey-6;
+            margin: 0 0 102px 0;
+            padding: 0;
+        }
+
+        &-advantages {
+            display: grid;
+            grid-template-columns: 119px 160px 163px;
+            gap: 58px;
+            margin-bottom: 91px;
+            p {
+                
+                span:first-child {
+                    font-family: var(--second-family);
+                    font-weight: 500;
+                    font-size: 44px;
+                    line-height: 110%;
+                    letter-spacing: -0.02em;
+                    color: $white;
+                    margin-bottom: 14px;
+                    display: inline-block;
+                }
+
+                span:last-child {
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 110%;
+                    letter-spacing: -0.02em;
+                    color: $grey-2;
+                }
+            }
+        }
+
+        &-button{
+            max-width: 170px;
+
+        }
     }
 }

@@ -30,6 +30,10 @@
     &-actions {
         display: flex;
         gap: 45px;
+        .actions-shop-now{
+            max-width: 155px;
+            width: 100%;
+        }
     }
 
     &-title {
@@ -46,4 +50,6 @@
         max-width: 1329px;
         width: 100%;
     }
+
+
 }

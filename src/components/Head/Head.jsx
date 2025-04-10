@@ -13,7 +13,7 @@ export function Head() {
                         Level up now!
                     </h2>
                     <div className="head-actions">
-                        <Button mod='primary'>Shop Now</Button>
+                        <Button mod='primary' className='actions-shop-now'>Shop Now</Button>
                         <Button mod='secondary'>Learn More</Button>
                     </div>
                 </div>
