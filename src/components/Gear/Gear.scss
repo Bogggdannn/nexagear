@@ -1,6 +1,6 @@
 @import "~/src/scss/variables.scss";
 
-.precision {
+.gear {
     margin-bottom: 120px;
     &-title {
         font-family: var(--second-family);
@@ -35,7 +35,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         img {
             max-width: 213px;
             width: 100%;
@@ -50,7 +50,6 @@
         > div p{
             max-width: 273px;
             width: 100%;
-
         }
         &-gamepads {
             .gamepad-image {
