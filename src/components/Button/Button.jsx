@@ -7,7 +7,7 @@ export function Button({ mod, children, className }) {
         }
     }
     return (
-        <div className={`${generateClass()} button-wrapper ${className}`}>
+        <div className={`${generateClass()} button-wrapper ${className ?? ''}`}>
             <button className="button">{children}</button>
             {mod == "primary"
                 ?
