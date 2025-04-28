@@ -21,7 +21,7 @@
         line-height: 150%;
         text-align: center;
         color: $grey-2;
-        margin-bottom: 74px;
+        margin-bottom: 48px;
     }
 
     &-image-box {
@@ -36,6 +36,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
         img {
             max-width: 213px;
             width: 100%;
@@ -43,27 +44,27 @@
 
         }
     }
-    
-    &-circles{
+
+    &-circles {
         display: flex;
-        
+
     }
 
-    &-circle{
+    &-circle {
         border: 2px solid transparent;
         border-radius: 50%;
         width: 26px;
         height: 26px;
         background: $white;
-        margin-right:  5px;
+        margin-right: 5px;
     }
 
-    &-circle-active{
-        
+    &-circle-active {
+
         border-color: $red;
     }
 
-    &-images-sign-icon-parent{
+    &-images-sign-icon-parent {
         display: flex;
         justify-content: space-between;
         max-width: 273px;
@@ -89,13 +90,21 @@
         color: $grey-2;
     }
 
-
+    &-buttons {
+        max-width: 780px;
+        width: 100%;
+        margin: 0 auto 74px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
 
     &-btn {
         display: flex;
         justify-content: center;
         margin-top: 63px;
-        &-more{
+
+        &-more {
             max-width: 171px;
             width: 100%;
             height: 69px;
@@ -106,14 +115,15 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 61px 0;
+
         >div p {
             max-width: 273px;
             width: 100%;
         }
 
-        &-images-sign{
-            
-            &-icon{
+        &-images-sign {
+
+            &-icon {
                 width: 51px;
                 height: 48px;
             }

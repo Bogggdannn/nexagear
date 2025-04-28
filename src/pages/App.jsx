@@ -1,3 +1,4 @@
+import { Features } from "../components/Features/Features";
 import { Gear } from "../components/Gear/Gear";
 import { Head } from "../components/Head/Head";
 import { Powering } from "../components/Powering/Powering";
@@ -10,6 +11,7 @@ function App() {
       <Powering/>
       <Precision/>
       <Gear/>
+      <Features/>
     </div>
   );
 }

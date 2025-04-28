@@ -1,11 +1,12 @@
 @import "~/src/scss/variables.scss";
 
-.button{
-    cursor:pointer;
+.button {
+    cursor: pointer;
     outline: none;
     border: none;
+
     &-primary {
-        button{
+        button {
             background-color: $red;
             font-weight: 600;
             font-size: 18px;
@@ -13,12 +14,13 @@
             color: $white;
             width: 100%;
             height: 56px;
-            
+
         }
+
         padding: 6px 8px;
     }
 
-    &-secondary button{
+    &-secondary button {
         border: 1px solid $grey;
         width: 176px;
         height: 56px;
@@ -30,98 +32,130 @@
         color: $white;
     }
 
-    &-high{
-        
+    &-high {
+        background-image: url("~/public/images/buttonFrame.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        min-width: 155px;
+        min-height: 48px;
+        button{
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            text-align: center;
+            background-color: transparent;
+            color: $white;
+            padding: 0 px;
+        }   
+        &.active{
+            background-image: url("~/public/images/buttonActive.png");
+            min-width: 155px;
+            min-height: 48px;
+            background-position: center;
+            background-size: cover;
+        }
     }
 
-    &-wrapper{
+    &-wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
     }
 
-    &-span-one, &-span-two, &-span-three,&-span-four{
+    &-span-one,
+    &-span-two,
+    &-span-three,
+    &-span-four {
         background-color: $white;
         width: 1px;
         height: 1px;
         position: absolute;
     }
 
-    &-span-one{
-        &::after{
-            position :absolute;
+    &-span-one {
+        &::after {
+            position: absolute;
             content: "";
             width: 1px;
             height: 13px;
             background-color: $white;
         }
-        &::before{
-            position :absolute;
+
+        &::before {
+            position: absolute;
             content: "";
             width: 32px;
             height: 1px;
             background-color: $white;
         }
+
         top: 0;
         left: 0;
     }
 
-    &-span-two{
-        &::after{
-            position :absolute;
+    &-span-two {
+        &::after {
+            position: absolute;
             content: "";
             width: 1px;
             height: 13px;
             background-color: $white;
         }
-        &::before{
-            position :absolute;
+
+        &::before {
+            position: absolute;
             content: "";
             width: 32px;
             height: 1px;
             background-color: $white;
         }
+
         top: 0;
         right: 0;
         transform: scale(-1, 1);
     }
 
-    &-span-three{
-        &::after{
-            position :absolute;
+    &-span-three {
+        &::after {
+            position: absolute;
             content: "";
             width: 1px;
             height: 13px;
             background-color: $white;
         }
-        &::before{
-            position :absolute;
+
+        &::before {
+            position: absolute;
             content: "";
             width: 32px;
             height: 1px;
             background-color: $white;
         }
+
         bottom: 0;
         left: 0;
         transform: scale(1, -1);
     }
 
-    &-span-four{
-        &::after{
-            position :absolute;
+    &-span-four {
+        &::after {
+            position: absolute;
             content: "";
             width: 1px;
             height: 13px;
             background-color: $white;
         }
-        &::before{
-            position :absolute;
+
+        &::before {
+            position: absolute;
             content: "";
             width: 32px;
             height: 1px;
             background-color: $white;
         }
+
         bottom: 0;
         right: 0;
         transform: scale(-1, -1);

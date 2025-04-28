@@ -1,13 +1,16 @@
 import "./Button.scss"
 
-export function Button({ mod, children, className }) {
+export function Button({ mod, children, className, onClick }) {
     function generateClass() {
         if (!!mod) {
             return `button-${mod}`
         }
     }
     return (
-        <div className={`${generateClass()} button-wrapper ${className ?? ''}`}>
+        <div 
+        className={`${generateClass()} button-wrapper ${className ?? ''}`}
+        onClick={onClick}
+        >
             <button className="button">{children}</button>
             {mod == "primary"
                 ?
