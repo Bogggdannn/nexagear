@@ -1,1 +1,91 @@
 @import "~/src/scss/variables.scss";
+
+.features {
+    padding: 100px 0;
+    background-color: #1a1a1a;;
+    &-title {
+        font-family: var(--second-family);
+        font-weight: 500;
+        font-size: 66px;
+        line-height: 110%;
+        letter-spacing: -0.02em;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 24px;
+        
+    }
+
+    &-paragraph {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        text-align: center;
+        color: #cdcdcd;
+        margin-bottom: 74px;
+    }
+
+    &-cards {
+        display: grid;
+        grid-template-columns: 336px 336px 336px;
+        justify-content: space-around;
+        max-width: 1111px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &-card {
+        background-image: url("~/public/images/featuresFon.png");
+        max-height: 384px;
+        margin-bottom: 30px;
+        background-size: contain;
+        padding: 36px 40px 36px 30px;
+        background-repeat: no-repeat;
+
+        &-title {
+            font-family: var(--second-family);
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 110%;
+            color: #fff;
+        }
+
+        &-paragraph {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: #cdcdcd;
+        }
+
+        &-icon {
+            width: 24px;
+            height: 30px;
+        }
+
+        &-link {
+            background: none;
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 150%;
+            color: #df4145;
+            outline: none;
+            border: none;
+            align-items: center;
+            cursor: pointer;
+
+            img {
+                margin-left: 10px;
+            }
+        }
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 310px;
+            align-items: flex-start;
+        }
+    }
+}

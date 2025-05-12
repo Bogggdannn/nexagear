@@ -3,6 +3,7 @@ import { Gear } from "../components/Gear/Gear";
 import { Head } from "../components/Head/Head";
 import { Powering } from "../components/Powering/Powering";
 import { Precision } from "../components/Precision/Presicion";
+import { Questions } from "../components/Questions/Questions";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Precision/>
       <Gear/>
       <Features/>
+      <Questions/>
     </div>
   );
 }
