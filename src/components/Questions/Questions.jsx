@@ -1,5 +1,6 @@
 import {useRef, useState} from "react"
 import "./Questions.scss"
+import { Button } from '../Button/Button';
 
 const AccordionItem = (props) => {
     const contentEl = useRef();
@@ -11,7 +12,8 @@ const AccordionItem = (props) => {
             <div className="rc-accordion-header">
                 <div className={`rc-accordion-toggle p-3 ${active === id ? 'active' : ''}`} onClick={() => handleToggle(id)}>
                     <h5 className="rc-accordion-title">{header}</h5>
-                    <i className="fa fa-chevron-down rc-accordion-icon"></i>
+                    <div className="rc-accordion-icon"></div>
+                    <img src="/images/line.png" alt="" className="<Button></Button>"/>
                 </div>
             </div>
             <div ref={contentEl} className={`rc-collapse ${active === id ? 'show' : ''}`} style={
@@ -48,17 +50,22 @@ export function Questions() {
         },
         {
             id: 2,
-            header: "Where does it come from?",
+            header: "Do your products come with a warranty?",
             text: `Yes! Our keyboards, mice, and joysticks are designed to work with PC, Mac, and major gaming consoles.`
         },
         {
             id: 3,
-            header: "Why do we use it?",
+            header: "Can I customize the RGB lighting on your keyboards and mice?",
             text: `Yes! Our keyboards, mice, and joysticks are designed to work with PC, Mac, and major gaming consoles.`
         },
         {
             id: 4,
-            header: "Where can I get some?",
+            header: "How can I track my order?",
+            text: `Yes! Our keyboards, mice, and joysticks are designed to work with PC, Mac, and major gaming consoles.`
+        },
+                {
+            id: 5,
+            header: "Do you offer international shipping?",
             text: `Yes! Our keyboards, mice, and joysticks are designed to work with PC, Mac, and major gaming consoles.`
         }
     ]
@@ -66,8 +73,8 @@ export function Questions() {
 
     return (
         <section className="container questions">
-            <h1 className="questions-title">Got Questions? We’ve Got Answers!</h1>
-            <p className="questions-paragraph">We know gamers need quick and reliable support. Here are some of the most frequently asked questions about NexaGear products.</p>
+            <h1 className="questions-title">Got Questions?<br/> We’ve Got Answers!</h1>
+            <p className="questions-paragraph">We know gamers need quick and reliable support. Here are some of<br/> the most frequently asked questions about NexaGear products.</p>
             <div>
                 {faqs.map((faq, index) => {
                     return (
@@ -75,6 +82,7 @@ export function Questions() {
                     )
                 })
                 }
+                <Button mod='primary' className='questions-button'>View All</Button>
             </div>
         </section>
     )

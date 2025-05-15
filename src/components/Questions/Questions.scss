@@ -1,5 +1,15 @@
+@import "~/src/scss/variables.scss";
+
 .questions {
+    margin-bottom: 121px;
+    &-button{
+        max-width: 141px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
     &-title {
+        margin: 120px 0 24px 0;
         font-family: var(--second-family);
         font-weight: 500;
         font-size: 66px;
@@ -7,6 +17,7 @@
         letter-spacing: -0.02em;
         text-align: center;
         color: #fff;
+
     }
 
     &-paragraph {
@@ -16,6 +27,7 @@
         line-height: 150%;
         text-align: center;
         color: #cdcdcd;
+        margin-bottom: 54px;
     }
 
     .card {
@@ -29,29 +41,43 @@
         overflow: hidden;
     }
 
+    .rc-accordion-header {
+        width: 912px;
+        height: 114px;
+        position: relative;
+    }
+
     .rc-accordion-toggle {
         display: flex;
         align-items: flex-start;
         cursor: pointer;
         justify-content: space-between;
-        background-color: #ebedf0;
         transition: 0.3s;
+        border: none;
+        
     }
 
-    .rc-accordion-toggle.active {
-        background-color: #5a8dee;
-    }
+    .rc-accordion-toggle.active {}
 
     .rc-accordion-toggle.active .rc-accordion-icon {
         transform: rotate(180deg);
         color: #fff;
+        background-color: $red;
     }
 
     .rc-accordion-card {
-        border: 1px solid #ddd;
+        border: none;
         border-radius: 5px;
         margin-bottom: 10px;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:first-child{
+            .rc-accordion-line{
+                display: none;
+            }
+        }
     }
 
     .rc-accordion-card:last-child {
@@ -59,12 +85,14 @@
     }
 
     .rc-accordion-title {
-        font-weight: 500;
-        font-size: 14px;
-        position: relative;
-        margin-bottom: 0;
-        color: #475F7B;
-        transition: 0.3s;
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 150%;
+        color: #fff;
+        width: 719px;
+        position: absolute;
+        margin-left: 37px;
     }
 
     .rc-accordion-toggle.active .rc-accordion-title {
@@ -72,17 +100,34 @@
     }
 
     .rc-accordion-icon {
-        position: relative;
-        top: 2px;
-        color: #475F7B;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #333;
         transition: 0.35s;
         font-size: 12px;
+        border-radius: 50%;
+        background-image: url("~/public/images/questionsIcon.png");
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .rc-accordion-body {
         flex: 1 1 auto;
         min-height: 1px;
         padding: 15px;
+
+        .mb-0 {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            color: #cdcdcd;
+            margin: 0px 165px;
+        }
     }
 
     .rc-accordion-body p {

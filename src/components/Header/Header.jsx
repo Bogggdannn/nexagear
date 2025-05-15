@@ -3,29 +3,30 @@ import { NavLink } from "react-router"
 import { slide as Menu } from 'react-burger-menu'
 import { useState } from 'react';
 
+export const links = [
+    {
+        name: 'Home',
+        url: '/'
+    },
+    {
+        name: 'About',
+        url: '/about'
+    },
+    {
+        name: 'Category',
+        url: '/category'
+    },
+    {
+        name: 'Community',
+        url: '/community'
+    },
+    {
+        name: 'FAQ`s',
+        url: '/faq'
+    }
+]
+
 function Header() {
-    let links = [
-        {
-            name: 'Home',
-            url: '/'
-        },
-        {
-            name: 'About',
-            url: '/about'
-        },
-        {
-            name: 'Category',
-            url: '/category'
-        },
-        {
-            name: 'Community',
-            url: '/community'
-        },
-        {
-            name: 'FAQ`s',
-            url: '/faq'
-        }
-    ]
 
     let [menu, setMenu] = useState(false)
     return (
@@ -51,7 +52,7 @@ function Header() {
                 <img src="/icons/cartButton.svg" alt="корзина" />
 
                 <a onClick={() => setMenu(!menu)} className="menu-item--small">
-                    <button className={`hamburger hamburger--collapse ${menu?"is-active":''}`} type="button" >
+                    <button className={`hamburger hamburger--collapse ${menu ? "is-active" : ''}`} type="button" >
                         <span className="hamburger-box">
                             <span className="hamburger-inner"></span>
                         </span>
