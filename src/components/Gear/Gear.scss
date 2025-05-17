@@ -96,6 +96,8 @@
         margin: 0 auto 74px;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 12px;
         
     }
 
@@ -116,7 +118,36 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 61px 0;
 
-        >div p {
+        @media (max-width: 1124px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px 10px;
+        }
+
+        > div {
+            @media (max-width: 1124px) {
+                width: 100%;
+                flex-grow: 1;
+                flex-basis: 290px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            > div {
+                @media (max-width: 1124px) {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+
+
+        > div p {
             max-width: 273px;
             width: 100%;
         }

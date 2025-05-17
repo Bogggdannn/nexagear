@@ -32,6 +32,18 @@
         max-width: 1111px;
         width: 100%;
         margin: 0 auto;
+
+        @media (max-width: 1050px) {
+            display: flex;
+            flex-wrap: wrap;
+
+            > div {
+
+                flex-grow: 1;
+                flex-basis: 336px;
+                max-width: 336px;
+            }
+        }
     }
 
     &-card {
@@ -86,6 +98,11 @@
             justify-content: space-between;
             height: 310px;
             align-items: flex-start;
+
+            @media (max-width: 1050px) {
+                max-width: 250px;
+                width: 100%;
+            }
         }
     }
 }
