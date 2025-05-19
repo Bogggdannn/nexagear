@@ -38,7 +38,8 @@
         background-size: contain;
         min-width: 155px;
         min-height: 48px;
-        button{
+
+        button {
             font-family: var(--font-family);
             font-weight: 400;
             font-size: 20px;
@@ -47,13 +48,27 @@
             background-color: transparent;
             color: $white;
             padding: 0 px;
-        }   
-        &.active{
+        }
+
+        &.active {
             background-image: url("~/public/images/buttonActive.png");
             min-width: 155px;
             min-height: 48px;
             background-position: center;
             background-size: cover;
+        }
+    }
+
+    &-default {
+        background: $red;
+
+        button {
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 18px;
+            color: $white;
+            background: transparent;
+            padding: 17px 29px;
         }
     }
 

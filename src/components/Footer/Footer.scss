@@ -1,0 +1,132 @@
+@import "~/src/scss/variables.scss";
+
+.footer {
+    padding: 73px;
+
+    &-title {
+        font-family: var(--second-family);
+        font-weight: 500;
+        font-size: 54px;
+        line-height: 120%;
+        text-transform: capitalize;
+        text-align: center;
+        color: $white;
+        margin-bottom: 24px;
+    }
+
+    &-paragraph {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        text-align: center;
+        color: $grey-2;
+        margin-bottom: 64px;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .ul-links {
+        gap: 41px;
+
+        a {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            text-align: center;
+            color: #cdcdcd;
+        }
+    }
+
+    .ul-icons{
+        svg{
+            &:hover{
+                circle{
+                    fill: #DF4145;
+                }
+            }
+        }
+    }
+
+    &-input {
+        margin-bottom: 182px;
+        display: flex;
+        justify-content: center;
+
+        .input-button {
+            max-width: 148px;
+            margin-left: 10px;
+        }
+
+        .input-text {
+            position: relative;
+            width: 317px;
+            background: rgba(245, 245, 245, 0.3);
+            outline: none;
+            border: none;
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 18px;
+            color: #cdcdcd;
+            padding: 17px 20px 17px 52px;
+
+            &::placeholder {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 18px;
+                color: #cdcdcd;
+            }
+
+            &::after {}
+        }
+
+        .input-wrapper {
+            position: relative;
+        }
+
+        .email-icon {
+            position: absolute;
+            width: 20px;
+            height: 16px;
+            content: "";
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-image: url('~/public/icons/mailIcon.svg');
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    &-links {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 91px;
+        align-items: center;
+    }
+
+    &-info {
+        display: flex;
+        justify-content: space-between;
+
+        .info-terms{
+            display: flex;
+            gap: 49px;
+        }
+
+        .info-nexagear {
+            font-family: var(--font-family);
+            font-style: italic;
+            font-weight: 400;
+            font-size: 18px;
+            color: #8f8f8f;
+        }
+    }
+}

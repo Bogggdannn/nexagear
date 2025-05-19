@@ -14,6 +14,7 @@ function App() {
       <Gear/>
       <Features/>
       <Questions/>
+      
     </div>
   );
 }
