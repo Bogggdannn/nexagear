@@ -13,7 +13,7 @@ const AccordionItem = (props) => {
                 <div className={`rc-accordion-toggle p-3 ${active === id ? 'active' : ''}`} onClick={() => handleToggle(id)}>
                     <h5 className="rc-accordion-title">{header}</h5>
                     <div className="rc-accordion-icon"></div>
-                    <img src="/images/line.png" alt="" className="<Button></Button>"/>
+                    <img src="/images/line.png" alt="" className=""/>
                 </div>
             </div>
             <div ref={contentEl} className={`rc-collapse ${active === id ? 'show' : ''}`} style={
